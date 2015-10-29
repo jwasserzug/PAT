@@ -1,2 +1,2 @@
 # PAT
-This repository will represent all the config files for automated PAT tests
+This repository will represent the config files for automated PAT tests
