@@ -3,17 +3,17 @@
 <Config>
   <ControllerPort>20000</ControllerPort>
   <EnabledPlugins>
-    <Plugin showBackpressure='1' showStats='0' logHost='tc-pat201'>perfmon</Plugin>
+    <Plugin showBackpressure='1' showStats='0' logHost='td-pat201'>perfmon</Plugin>
   </EnabledPlugins>
   <Machines>
 
     <Machine>
-      <Id>TD-PAT211</Id>
-      <Host>TD-PAT211</Host>
+      <Id>TD-PAT215</Id>
+      <Host>TD-PAT215</Host>
       <OS>Linux</OS>
       <Username>xman</Username>
       <Environment>038</Environment>
-      <WorkingDir>/home/pat-scripts/pat2/regression/isxCfg/gwLat/gw_distributed/</WorkingDir>
+      <WorkingDir>/home/pat-scripts/pat2/regression/gemCfgs/</WorkingDir>
       <SnmpPort>8161</SnmpPort>
       <SnmpCommunity>public</SnmpCommunity>
       <SystemMonitoring>0</SystemMonitoring>
@@ -24,7 +24,7 @@
           <Id>0008</Id>
           <Port>2008</Port>
           <LoadProfile>trades</LoadProfile>
-          <CommandLine>/opt/gts/bin/gwFeeder.py -g TB-GTS13_8E.cfg -l trades.cfg -c feeder_8.cfg -r rda.cfg</CommandLine>
+          <CommandLine>/opt/gts/bin/gwFeeder.py -g TB-GTS13_8E.cfg -l trades.cfg -c feeder_8.cfg -r rda.cfg -b</CommandLine>
         </Feeder>  
 
       </Feeders>
@@ -1002,5 +1002,5 @@
     </StepsGroups>
 </LoadProfile>
 
-  </LoadProfiles>
+ </LoadProfiles>
 </Config>
