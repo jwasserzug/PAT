@@ -3,12 +3,12 @@
 <Config>
   <ControllerPort>20000</ControllerPort>
   <EnabledPlugins>
-    <Plugin showBackpressure='1' showStats='1' logHost='tc-pat201'>perfmon</Plugin>
+    <Plugin showBackpressure='1' showStats='1' logHost='td-pat201'>perfmon</Plugin>
   </EnabledPlugins>
   <Machines>
 <Machine>
-      <Id>TC-PAT211</Id>
-      <Host>TC-PAT211</Host>
+      <Id>TD-PAT211</Id>
+      <Host>TD-PAT211</Host>
       <OS>Linux</OS>
       <Username>xman</Username>
       <Environment>038</Environment>

@@ -3,7 +3,7 @@
 <Config>
   <ControllerPort>20000</ControllerPort>
   <EnabledPlugins>
-	<Plugin showBackpressure='1' showStats='0' logHost='tc-pat201'>perfmon</Plugin>    
+	<Plugin showBackpressure='1' showStats='0' logHost='td-pat201'>perfmon</Plugin>    
   </EnabledPlugins>
   <Machines>
     <Machine>

@@ -3,14 +3,14 @@
 <Config>
   <ControllerPort>20000</ControllerPort>
   <EnabledPlugins>
-    <Plugin showBackpressure='0' showStats='0' logHost='tc-pat201'>perfmon</Plugin>
+    <Plugin showBackpressure='0' showStats='0' logHost='td-pat201'>perfmon</Plugin>
 
   </EnabledPlugins>
   <Machines>
 
     <Machine>
-      <Id>TC-PAT211</Id>
-      <Host>TC-PAT211</Host>
+      <Id>TD-PAT211</Id>
+      <Host>TD-PAT211</Host>
       <OS>Linux</OS>
       <Username>xman</Username>
       <Environment>038</Environment>
@@ -46,8 +46,8 @@
 
 	
 	 <Machine>
-      <Id>TC-PAT215</Id>
-      <Host>TC-PAT215</Host>
+      <Id>TD-PAT215</Id>
+      <Host>TD-PAT215</Host>
       <OS>Linux</OS>
       <Username>xman</Username>
       <Environment>038</Environment>
