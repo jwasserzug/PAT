@@ -92,7 +92,7 @@
           <Id>0003</Id>
           <Port>2003</Port>
           <LoadProfile>stepRate</LoadProfile>
-          <CommandLine>/home/ops-scripts/efi_feeder/efiFeeder.py -H tc-pat216 -p 13804 -l ifiLoad.cfg -c feeder_3.cfg -r rda.cfg</CommandLine>
+          <CommandLine>/home/ops-scripts/efi_feeder/efiFeeder.py -H td-pat216 -p 13804 -l ifiLoad.cfg -c feeder_3.cfg -r rda.cfg</CommandLine>
         </Feeder> 
 		<Feeder>
           <Id>0008</Id>
