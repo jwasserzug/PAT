@@ -32,7 +32,6 @@
           <Port>2002</Port>
           <LoadProfile>halfrate</LoadProfile>
           <CommandLine>/opt/gts/bin/gwFeeder.py -g gateway2.cfg -l loadmix_orderaddmod_ci200.cfg -c feeder_2.cfg -r rda.cfg</CommandLine>
-          </DataFiles>
         </Feeder>
 
 	</Feeders> 
