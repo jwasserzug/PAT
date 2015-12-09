@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from startOfDay import *
 
 class ProductQuoter(StartOfDay):
@@ -13,6 +14,7 @@ class ProductQuoter(StartOfDay):
         self.products = refdata.fetchProductsInstruments(partitions=partitions, closingPositionOnly=False)
         self.securities = refdata.fetchSecurities()
         self.pmmunits = refdata.fetchPMMUnitsProducts()
+        self.mmusers  = refdata.fetchMMUserNameProducts()
         self.pmmusers = refdata.fetchPMMUserNameProducts()
         self.houseunits = refdata.fetchHouseUnitsUsers()
         self.mopsuser = refdata.fetchMOPSUserName()
@@ -83,16 +85,16 @@ class ProductQuoter(StartOfDay):
         massQuoteMsg.RequestHeader.MsgType = isefix.MsgType.MassQuote
         count = 1
 
-        #print self.pmmusers.keys()
+        print self.mmusers.keys()
 
         if productId:
-            if productId in self.pmmusers[loginName]:
+            if productId in self.mmusers[loginName]:
                 product_list = [productId]
             else:
                 product_list = []
                 print("ProductID %s does not belong to %s" % (productId, loginName))
         else:
-            product_list = self.pmmusers[loginName]
+            product_list = self.mmusers[loginName]
 
         print("Quoting %s Products..." % len(product_list))
         for productId in product_list:
